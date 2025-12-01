@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "react-native-app-apis1",
-    "slug": "react-native-app-apis1",
+    "name": "Miniblog Clases",
+    "slug": "miniblog-clases",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
