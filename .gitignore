@@ -1,3 +1,5 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
 # Logs
 logs
 *.log
@@ -5,6 +7,11 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
@@ -20,6 +27,7 @@ lib-cov
 
 # Coverage directory used by tools like istanbul
 coverage
+/coverage
 *.lcov
 
 # nyc test coverage
@@ -40,12 +48,16 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+/.pnp
+.pnp.js
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
 
 # TypeScript cache
 *.tsbuildinfo
+
+add-example
 
 # Optional npm cache directory
 .npm
@@ -64,11 +76,6 @@ web_modules/
 
 # Yarn Integrity file
 .yarn-integrity
-
-# dotenv environment variable files
-.env
-.env.*
-!.env.example
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
@@ -134,6 +141,56 @@ dist
 !.yarn/sdks
 !.yarn/versions
 
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/ # Visual Studio Code
+
+
+
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# local env files
+# dotenv environment variable files
+.env
+.env.*
+!.env.example
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# generated native folders
+/ios
+/android
